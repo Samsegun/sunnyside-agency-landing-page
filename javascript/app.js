@@ -2,6 +2,7 @@
 const toggleButton = document.querySelector(".toggle-button");
 const mobileNav = document.querySelector(".mobile-nav");
 const backDrop = document.querySelector(".backdrop");
+const arrowDown = document.querySelector("#arrow-down");
 
 // action identifier
 const ACTION = "close";
@@ -10,6 +11,9 @@ const ACTION = "close";
 function mobileMenu() {
   backDrop.classList.toggle(ACTION);
   mobileNav.classList.toggle(ACTION);
+  //   if (!mobileNav.classList.contains(ACTION)) {
+  //     arrowDown.style.display = "none";
+  //   }
 }
 
 // event listener for toggle button

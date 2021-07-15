@@ -35,7 +35,7 @@ body {
   z-index: 1;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  animation: flow-in 0.3s ease-in forwards;
 }
 
 .header {
@@ -162,13 +162,14 @@ body {
 .mobile-nav {
   background: hsla(0, 0%, 100%);
   width: 80%;
-  height: 22rem;
+  height: 25rem;
   clip-path: polygon(1% 10%, 83% 10%, 100% 1%, 99% 99%, 1% 99%);
   text-align: center;
   margin: -21rem auto 0rem auto;
   font-size: 1.3rem;
   position: relative;
   z-index: 2;
+  animation: float-in 0.3s ease-out forwards;
 }
 
 .mobile-nav ul {
@@ -179,7 +180,7 @@ body {
 .mobile-nav li {
   width: 80%;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .mobile-nav a {
@@ -190,6 +191,7 @@ body {
 
 .mobile-nav .mobile-nav__cta {
   font-family: var(--heading);
+  font-size: 1.1rem;
   color: black;
   background: var(--Yellow);
   padding: 1rem;
@@ -441,6 +443,22 @@ footer div ul {
   }
   100% {
     transform: rotate(10deg);
+  }
+}
+@keyframes float-in {
+  from {
+    transform: translateY(-3rem);
+  }
+  to {
+    transform: translateY((0));
+  }
+}
+@keyframes flow-in {
+  from {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.7);
   }
 }
 
