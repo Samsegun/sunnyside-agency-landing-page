@@ -6,15 +6,14 @@ const backDrop = document.querySelector(".backdrop");
 // action identifier
 const ACTION = "close";
 
+// a function for adding and removing action from classlist
 function mobileMenu() {
   backDrop.classList.toggle(ACTION);
   mobileNav.classList.toggle(ACTION);
 }
 
-toggleButton.addEventListener("click", () => {
-  mobileMenu();
-});
+// event listener for toggle button
+toggleButton.addEventListener("click", mobileMenu);
 
-backDrop.addEventListener("click", () => {
-  mobileMenu();
-});
+// event listener for overlay or back drop
+backDrop.addEventListener("click", mobileMenu);
