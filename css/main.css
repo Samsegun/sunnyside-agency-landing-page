@@ -160,7 +160,7 @@ body {
 }
 
 .mobile-nav {
-  background: hsla(0, 0%, 100%);
+  background: var(--white);
   width: 80%;
   height: 25rem;
   clip-path: polygon(1% 10%, 83% 10%, 100% 1%, 99% 99%, 1% 99%);
@@ -421,12 +421,12 @@ footer div ul {
   fill: var(--white);
 }
 
-footer span .dev-link {
+footer p .dev-link {
   color: green;
   transition: 200ms ease-in-out;
 }
 
-footer span .dev-link:hover {
+footer p .dev-link:hover {
   color: var(--dark-grayish-blue);
 }
 
@@ -558,7 +558,7 @@ footer span .dev-link:hover {
   }
   .testimonials-customer_review p {
     margin: 1rem 0;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     line-height: 1.4rem;
   }
   .customer-name {
@@ -583,6 +583,9 @@ footer span .dev-link:hover {
   footer div {
     width: 100%;
     padding: 2rem 0;
+  }
+  footer p {
+    margin: 2rem;
   }
 }
 
