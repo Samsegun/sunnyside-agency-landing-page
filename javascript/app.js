@@ -11,9 +11,6 @@ const ACTION = "close";
 function mobileMenu() {
   backDrop.classList.toggle(ACTION);
   mobileNav.classList.toggle(ACTION);
-  //   if (!mobileNav.classList.contains(ACTION)) {
-  //     arrowDown.style.display = "none";
-  //   }
 }
 
 // event listener for toggle button

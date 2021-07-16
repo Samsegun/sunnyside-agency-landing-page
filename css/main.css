@@ -421,6 +421,15 @@ footer div ul {
   fill: var(--white);
 }
 
+footer span .dev-link {
+  color: green;
+  transition: 200ms ease-in-out;
+}
+
+footer span .dev-link:hover {
+  color: var(--dark-grayish-blue);
+}
+
 .close {
   display: none;
 }
@@ -428,10 +437,10 @@ footer div ul {
 /* key frames */
 @keyframes wiggle {
   from {
-    margin-top: 3rem;
+    transform: translateY(0);
   }
   to {
-    margin-top: 5rem;
+    transform: translateY(2rem);
   }
 }
 @keyframes rotate {
