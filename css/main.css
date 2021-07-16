@@ -471,6 +471,15 @@ footer span .dev-link:hover {
   }
 }
 
+/* @keyframes float-in-reverse {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-3rem);
+  }
+} */
+
 /* media queries */
 @media (min-width: 18.7rem) and (max-width: 46rem) {
   .header {
