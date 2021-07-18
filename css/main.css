@@ -41,14 +41,14 @@ body {
 .header {
   background: url(../images/desktop/image-header.jpg) bottom 0 center/cover;
   color: var(--white);
-  min-height: 39rem;
+  min-height: 43rem;
 }
 
 .header .navbar {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1.5rem 1rem;
+  padding: 2rem;
 }
 
 .header .navbar h3 a {
