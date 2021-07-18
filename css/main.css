@@ -352,6 +352,10 @@ body {
   font-family: var(--heading);
 }
 
+.products-identifier {
+  display: none;
+}
+
 .products-items {
   display: flex;
 }
